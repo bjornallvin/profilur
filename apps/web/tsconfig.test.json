@@ -1,0 +1,7 @@
+{
+  "extends": "@profilur/config/tsconfig/test.json",
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}
