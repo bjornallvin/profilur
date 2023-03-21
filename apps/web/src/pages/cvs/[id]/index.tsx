@@ -23,5 +23,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
 }
 
 export default function CVPage({ cv }: { cv: Cv }) {
+  if (!cv) return null
   return <div>CV Title: {cv.title}</div>
 }
