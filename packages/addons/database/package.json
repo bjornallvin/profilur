@@ -20,7 +20,8 @@
     "db:generate": "prisma generate",
     "db:push": "prisma db push --skip-generate",
     "build": "tsup src/index.ts --format esm,cjs --dts --external react",
-    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react --onSuccess 'yarn tsc --emitDeclarationOnly --declarationDir dist'"
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react --onSuccess 'yarn tsc --emitDeclarationOnly --declarationDir dist'",
+    "postinstall": "prisma generate"
   },
   "eslintConfig": {
     "extends": "../../support/config/eslint/eslint-react"
